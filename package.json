@@ -13,10 +13,15 @@
     "@next/font": "^13.0.6",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
-    "next": "13.0.6",
+    "fast-xml-parser": "^4.2.0",
+    "fs": "^0.0.1-security",
+    "import": "^0.0.6",
+    "next": "^13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "xlsx": "^0.18.5",
+    "xml2js": "^0.5.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^6.5.1",
