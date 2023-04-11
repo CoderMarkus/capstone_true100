@@ -3,8 +3,8 @@ import React from "react";
 const Top100Page = () => {
   // Daten für die Top-100-Liste
   const top100List = [
-    { rank: 1, title: "Item 1" },
-    { rank: 2, title: "Item 2" },
+    { rank: 1, title: "Item 01" },
+    { rank: 2, title: "Item 02" },
     // Weitere Listeneinträge hier
   ];
 
