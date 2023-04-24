@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import fs from "fs";
 import xml2js from "xml2js";
-import { Wrapper, Uber, Orderli, Lila } from "./styles";
+import { Wrapper, Uber, Orderli, Lila } from "../components/styles";
 
 const Playlist = ({ top100 }) => {
   const [selectedFile, setSelectedFile] = useState(null);
