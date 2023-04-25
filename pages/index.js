@@ -1,19 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import fs from "fs";
 import xml2js from "xml2js";
+import { Wrapper, Uber, Orderli, Lila } from "../components/styles";
+import DragComponent from "../components/drag.js";
 
 const Playlist = ({ top100 }) => {
+  const [selectedFile, setSelectedFile] = useState(null);
+
+  const handleFileUpload = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
+
   return (
-    <div>
-      <h1>Top 100 meistgespielten Songs</h1>
-      <ol>
+    <Wrapper>
+      <Uber>Top 100 meistgespielten Songs</Uber>
+      <Orderli>
         {top100.map((song) => (
-          <li key={song.id}>
-            {song.title} von {song.artist} ({song.playCount} Mal gespielt)
-          </li>
+          <Lila key={song.id}>
+            <span style={{ color: "hotpink" }}>{song.title}</span>
+            <span>
+              {" "}
+              von {song.artist} ({song.playCount} Mal gespielt)
+            </span>
+          </Lila>
         ))}
-      </ol>
-    </div>
+      </Orderli>
+      <div>
+        <DragComponent />
+      </div>
+    </Wrapper>
   );
 };
 
