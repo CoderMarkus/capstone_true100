@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import fs from "fs";
 import xml2js from "xml2js";
 import { Wrapper, Uber, Orderli, Lila } from "../components/styles";
+import DragComponent from "../components/drag.js";
 
 const Playlist = ({ top100 }) => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -25,8 +26,7 @@ const Playlist = ({ top100 }) => {
         ))}
       </Orderli>
       <div>
-        <input type="file" onChange={handleFileUpload} />
-        <button>Upload Playlist</button>
+        <DragComponent />
       </div>
     </Wrapper>
   );
