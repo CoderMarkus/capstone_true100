@@ -3,6 +3,9 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  files: {
+    domains: ["res.cloudinary.com"],
+  },
   reactStrictMode: true,
   webpack(config) {
     config.module.rules.push({

@@ -7,7 +7,7 @@ import { message } from "antd";
 const props = {
   name: "file",
   multiple: true,
-  action: "https://www.mocky.io/v2/5cc8019d300000980a055e76",
+  action: "/api/newupload",
   onChange(info) {
     const { status } = info.file;
     if (status !== "uploading") {
