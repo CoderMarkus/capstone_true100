@@ -4,7 +4,7 @@ import xml2js from "xml2js";
 import { Wrapper, Uber, Orderli, Lila } from "../components/styles";
 import DragComponent from "../components/drag.js";
 
-const Playlist = ({ top100 }) => {
+function Playlist({ top100 }) {
   const [selectedFile, setSelectedFile] = useState(null);
 
   const handleFileUpload = (event) => {
@@ -30,7 +30,7 @@ const Playlist = ({ top100 }) => {
       </div>
     </Wrapper>
   );
-};
+}
 
 export default Playlist;
 

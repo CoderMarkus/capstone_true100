@@ -1,9 +1,6 @@
-import { createRoot } from "react-dom";
 import { InboxOutlined } from "@ant-design/icons";
-import Upload from "antd/lib/upload";
-import Dragger from "antd/lib/upload/Dragger";
-import { message } from "antd";
-
+import { message, Upload } from "antd";
+const { Dragger } = Upload;
 const props = {
   name: "file",
   multiple: true,
@@ -15,10 +12,18 @@ const props = {
     }
     if (status === "done") {
       message.success(`${info.file.name} file uploaded successfully.`);
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const fileContent = event.target.result;
+        localStorage.setItem("uploadedFile", fileContent);
+        console.log("File saved to local storage:", fileContent);
+      };
+      reader.readAsText(info.file.originFileObj);
     } else if (status === "error") {
       message.error(`${info.file.name} file upload failed.`);
     }
   },
+
   onDrop(e) {
     console.log("Dropped files", e.dataTransfer.files);
   },
@@ -39,8 +44,4 @@ const App = () => (
   </Dragger>
 );
 
-const IndexPage = () => {
-  return <App />;
-};
-
-export default IndexPage;
+export default App;
