@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import Link from "next/link";
+
 export const Wrapper = styled.div`
-  background: black;
   width: 375px;
 `;
 export const Uber = styled.h1`
@@ -8,6 +9,9 @@ export const Uber = styled.h1`
   background-color: yellowgreen;
   text-align: center;
   font: icon;
+  position: fixed;
+  top: 0;
+  width: 100%;
 `;
 
 export const Orderli = styled.ol`
@@ -18,4 +22,35 @@ export const Orderli = styled.ol`
 
 export const Lila = styled.li`
   text-align: center;
+  text-shadow: 0px 0px 10px black;
+  text-stroke: 2px black;
+`;
+
+export const NavBa = styled.nav`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 2px dotted #ccc;
+  text-align: center;
+  margin: 0 0px;
+  text-decoration: none;
+  color: #333;
+  width: 375px;
+  position: fixed;
+  bottom: 0;
+  background-color: yellowgreen;
+`;
+
+export const StyledLink = styled(Link)`
+  color: ghostwhite;
+  font: icon;
+  padding: 5px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
