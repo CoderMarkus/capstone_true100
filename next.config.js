@@ -3,7 +3,7 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
-  files: {
+  images: {
     domains: ["res.cloudinary.com"],
   },
   reactStrictMode: true,

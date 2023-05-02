@@ -5,13 +5,6 @@ import { Wrapper, Uber, Orderli, Lila } from "../components/styles";
 import DragComponent from "../components/drag.js";
 import LinkComponent from "../components/NavItem.js";
 
-import backgroundImage from "../components/images/7508.jpg";
-const wrapperStyles = {
-  backgroundImage: `url(${backgroundImage})`,
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  zindex: 999,
-};
 const Playlist = ({ top100 }) => {
   const [selectedFile, setSelectedFile] = useState(null);
 
@@ -20,7 +13,7 @@ const Playlist = ({ top100 }) => {
   };
 
   return (
-    <Wrapper style={wrapperStyles}>
+    <Wrapper>
       <Uber>Top 100 meistgespielten Songs</Uber>
       <Orderli>
         {top100.map((song) => (

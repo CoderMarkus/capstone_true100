@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
 `;
 export const Uber = styled.h1`
   margin: 0;
-  background-color: yellowgreen;
+  background: linear-gradient(to right, orange, purple, lightblue);
   text-align: center;
   font: icon;
   position: fixed;
@@ -22,8 +22,8 @@ export const Orderli = styled.ol`
 
 export const Lila = styled.li`
   text-align: center;
-  text-shadow: 0px 0px 10px black;
-  text-stroke: 2px black;
+  text-shadow: 0px 0px 5px black;
+  text-stroke: 30px black;
 `;
 
 export const NavBa = styled.nav`
@@ -42,7 +42,7 @@ export const NavBa = styled.nav`
   width: 375px;
   position: fixed;
   bottom: 0;
-  background-color: yellowgreen;
+  background: linear-gradient(to right, orange, purple, lightblue);
 `;
 
 export const StyledLink = styled(Link)`

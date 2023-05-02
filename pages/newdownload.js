@@ -8,11 +8,12 @@ function Pls() {
       <div>
         <Uber>Top 100 meistgespielten Songs</Uber>
         <CldImage
-          width="600"
-          height="600"
-          src="v1682535952/7d1213648e5d8a83ffffa0f02.png"
-          alt="<Alt Text>"
-        />
+          width="390"
+          height="400"
+          src="Top100_p9sbap.png"
+          alt="<Top 100>"
+        ></CldImage>
+
         <div>
           <LinkComponent />
         </div>

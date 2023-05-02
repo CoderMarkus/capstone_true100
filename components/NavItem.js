@@ -10,6 +10,9 @@ export default function Navigation() {
       <li>
         <StyledLink href="/newdownload">Uploaded DJ Playlists</StyledLink>
       </li>
+      <li>
+        <StyledLink href="/DJTodoList">DJ To Do</StyledLink>
+      </li>
     </NavBa>
   );
 }
