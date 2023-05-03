@@ -3,6 +3,7 @@ import fs from "fs";
 import xml2js from "xml2js";
 import { Wrapper, Uber, Orderli, Lila } from "../components/styles";
 import DragComponent from "../components/drag.js";
+import LinkComponent from "../components/NavItem.js";
 
 const Playlist = ({ top100 }) => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -27,6 +28,9 @@ const Playlist = ({ top100 }) => {
       </Orderli>
       <div>
         <DragComponent />
+      </div>
+      <div>
+        <LinkComponent />
       </div>
     </Wrapper>
   );

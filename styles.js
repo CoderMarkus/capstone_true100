@@ -12,5 +12,7 @@ export default createGlobalStyle`
     font-family: icon;
     background: black;
     color: ghostwhite;
+    background-image: url('https://i.postimg.cc/Vk9vstn3/1419.webp');
+    background-size: contain;    
   }
 `;
